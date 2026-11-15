@@ -22,4 +22,10 @@ public class Boleto {
         return precio;
     }
 
+    public boolean esBoletoValido() {
+        if (precio > 0 && !asientoReservado.isEmpty()){
+            return true;
+        }
+        return false;
+    }
 }
